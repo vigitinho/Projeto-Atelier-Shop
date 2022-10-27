@@ -1,0 +1,40 @@
+<div class="vestido" *ngIf="vestido">
+  <h1>{{ vestido.title }}</h1>
+  <img
+    src="{{ baseApiUrl }}uploads/{{ vestido.image }}"
+    alt="{{ vestido.title }}"
+  />
+  <h1>R$: {{ vestido.value }}</h1>
+  <div class="about-vestido">
+    <h3>Descrição do Vestido:</h3>
+    <p>{{ vestido.description }}</p>
+  </div>
+
+  <div class="actions">
+    <h3>Ações</h3>
+    <a
+      class="what"
+      href="https://api.whatsapp.com/send?text=Esse Vestido Esta Disponível?&phone=55449989-9064"
+      target="_blank"
+    >
+      WhatsApp
+    </a>
+  </div>
+
+  <div class="details-vestido">
+    <table>
+      <tr>
+        <th>Cor:</th>
+        <td>{{ vestido.color }}</td>
+      </tr>
+      <tr>
+        <th>Estilo:</th>
+        <td>{{ vestido.style }}</td>
+      </tr>
+    </table>
+  </div>
+  <!-- Comentarios -->
+  <div class="comments">
+    <h3>Comentários (0):</h3>
+  </div>
+</div>

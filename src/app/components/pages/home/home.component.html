@@ -1,0 +1,27 @@
+<div class="home-container">
+  <h1>Conheça os nosso <span>Vestidos</span></h1>
+  <div class="search-container">
+    <form>
+      <fa-icon [icon]="faSearch"></fa-icon>
+      <input type="text" placeholder="Pesquisa" (input)="search($event)" />
+    </form>
+  </div>
+  <div *ngIf="vestidos.length > 0; else noVestidos">
+    <div class="vestidos-container">
+      <div class="vestido" *ngFor="let vestido of vestidos">
+        <img
+          src="{{ baseApiUrl }}uploads/{{ vestido.image }}"
+          alt="{{ vestido.title }}"
+        />
+        <p class="date">Em: {{ vestido.created_at }}</p>
+        <h3>{{ vestido.title }}</h3>
+        <p>R$ {{ vestido.value }}</p>
+        <p>Comentários: {{ vestido.comments!.length }}</p>
+        <p><a routerLink="vestidos/{{ vestido.id }}">Detalhes</a></p>
+      </div>
+    </div>
+  </div>
+  <ng-template #noVestidos>
+    <h1>Vestido não encontrado!</h1>
+  </ng-template>
+</div>
