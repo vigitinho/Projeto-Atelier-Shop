@@ -1,0 +1,28 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+h2, p{
+  margin-bottom: 1em;
+}
+
+ul{
+  list-style: none;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-midia img{
+  width: 4em;
+}
+
+

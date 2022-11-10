@@ -84,3 +84,12 @@ th {
 .author span {
   font-weight: bold;
 }
+
+.actions a img {
+  width: 4em;
+  background-color: #eeeeee;
+}
+
+.what {
+  background-color: #eeeeee;
+}

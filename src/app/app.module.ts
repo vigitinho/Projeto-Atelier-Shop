@@ -12,7 +12,6 @@ import { MessagesComponent } from './components/messages/messages.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { VestidoComponent } from './components/pages/vestido/vestido.component';
 import { AboutComponent } from './components/pages/about/about.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 @NgModule({
@@ -24,7 +23,6 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     MessagesComponent,
     VestidoComponent,
     AboutComponent,
-    CarouselComponent,
   ],
   imports: [
     BrowserModule,
